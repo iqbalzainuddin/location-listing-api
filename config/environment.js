@@ -16,6 +16,12 @@ const config = {
     is_ssl: process.env.DB_IS_SSL && process.env.DB_IS_SSL.toLowerCase() === "true",
     ca_cert: process.env.DB_CA_CERT
   },
+  redis: {
+    username: process.env.REDIS_USERNAME,
+    password: process.env.REDIS_PASSWORD,
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT
+  },
   jwt: {
     secret_key: process.env.JWT_SECRET_KEY
   }
