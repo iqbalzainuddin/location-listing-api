@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Specify ECMAScript version
+    "module": "commonjs", // Use CommonJS for Node.js
+    "baseUrl": ".", // Base directory for resolving paths
+    "paths": {
+      "@/features/*": ["app/features/*"],
+      "@/middleware/*": ["app/middleware/*"],
+      "@/utils/*": ["app/utils/*"],
+      "@/config/*": ["config/*"],
+      "@/models/*": ["database/models/*"],
+      "@/routes/*": ["routes/*"]
+    }
+  },
+  "include": ["**/*.js"],
+  "exclude": ["node_modules"] // Exclude dependencies
+}
